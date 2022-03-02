@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="plugin_mik_server:jar">
+    <output-path>$USER_HOME$/Desktop/server/plugins</output-path>
+    <root id="archive" name="plugin_mik_server.jar">
+      <element id="module-output" name="plugin_mik_server" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/spigot-api-1.18.1-R0.1-20220219.221128-76.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

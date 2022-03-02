@@ -1,0 +1,13 @@
+name: Blender
+main: com.pythontest.blender.Blender
+version: 1.0
+author: pythontest
+api-version: 1.18
+commands:
+  trade:
+    description: opening inv
+    usage: /<command>
+    aliases: []
+    permission: blender.openinv
+    permission-message: Nie masz uprawnień aby użyć tej komendy
+
