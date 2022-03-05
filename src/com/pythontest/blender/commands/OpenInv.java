@@ -28,12 +28,16 @@ public class OpenInv implements CommandExecutor {
             }
             if(command.getName().equalsIgnoreCase("trade"))
             {
-                SelectionScreen gui =  new SelectionScreen();
-                gui.player1=player;
-                gui.player2=player_2;
-                Inventory inv = gui.getInventory();
-                player.openInventory(inv);
-                player_2.openInventory(inv);
+                if(!(player.getUniqueId().equals(player_2.getUniqueId()))&&player.canSee(player_2)) {
+                    SelectionScreen gui = new SelectionScreen();
+                    gui.player1 = player;
+                    gui.player2 = player_2;
+                    Inventory inv = gui.getInventory();
+                    player.openInventory(inv);
+                    player_2.openInventory(inv);
+                }
+                else
+                    commandSender.sendMessage("Nie możesz zobaczyć swojego kolegi do tradu(siebie też nie zobaczysz)");
 
             }
         }
